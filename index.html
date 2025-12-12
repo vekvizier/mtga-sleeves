@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>MTG Arena Sleeves</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>MTG Arena Sleeves</h1>
+
+<div class="controls">
+  <select onchange="filterByYear(this.value)">
+    <option value="all">Все годы</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+  </select>
+
+  <input
+    type="text"
+    placeholder="Поиск..."
+    oninput="searchText(this.value)"
+  >
+</div>
+
+<div id="gallery"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
